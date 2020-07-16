@@ -117,17 +117,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         // updating row
         return db.update(TABLE_ACCOUNTS, values, ACCOUNT_ID + " = ?",
-                new String[] { String.valueOf(accounts.getId()) });
+                new String[]{String.valueOf(accounts.getId())});
     }
 
     public void deleteAccounts(long account_id) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_ACCOUNTS, ACCOUNT_ID + " = ?",
-                new String[] { String.valueOf(account_id) });
+                new String[]{String.valueOf(account_id)});
     }
-
-
-
 
 
     private static final String TABLE_ADMIN = "admin";
@@ -157,7 +154,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         String selectQuery = "SELECT  * FROM " + TABLE_ADMIN + " WHERE "
-                + ADMIN_NAME ;
+                + ADMIN_NAME;
 
         Log.e(LOG, selectQuery);
 
@@ -202,13 +199,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(ADMIN_NAME, admin.getUsername());
         // updating row
         return db.update(TABLE_ADMIN, values, ADMIN_NAME + " = ?",
-                new String[] { String.valueOf(admin.getUsername()) });
+                new String[]{String.valueOf(admin.getUsername())});
     }
 
     public void deleteAdmin(long admin_name) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_ADMIN, ADMIN_NAME + " = ?",
-                new String[] { String.valueOf(admin_name) });
+                new String[]{String.valueOf(admin_name)});
     }
 
 }
