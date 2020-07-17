@@ -6,12 +6,12 @@ public class Raw_Materials {
     long material_measure;
     long current_stock;
     long minimum_stock;
-    long material_name;
+    String material_name;
 
     public Raw_Materials() {
     }
 
-    public Raw_Materials(long material_id, long material_measure, long current_stock, long minimum_stock, long material_name) {
+    public Raw_Materials(long material_id, long material_measure, long current_stock, long minimum_stock, String material_name) {
         this.material_id = material_id;
         this.material_measure = material_measure;
         this.current_stock = current_stock;
@@ -51,11 +51,11 @@ public class Raw_Materials {
         this.minimum_stock = minimum_stock;
     }
 
-    public long getMaterial_name() {
+    public String getMaterial_name() {
         return material_name;
     }
 
-    public void setMaterial_name(long material_name) {
+    public void setMaterial_name(String material_name) {
         this.material_name = material_name;
     }
 

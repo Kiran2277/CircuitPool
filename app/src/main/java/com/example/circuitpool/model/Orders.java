@@ -43,12 +43,12 @@ public class Orders {
         this.supplier_id = supplier_id;
     }
 
-    public long getTransaction_id() {
+    public long getTrans_id() {
         return trans_id;
     }
 
-    public void setTransaction_id(long transaction_id) {
-        this.trans_id = transaction_id;
+    public void setTrans_id(long trans_id) {
+        this.trans_id = trans_id;
     }
 
     public String getOrder_status() {
@@ -65,7 +65,7 @@ public class Orders {
                 "order_id=" + order_id +
                 ", order_price=" + order_price +
                 ", supplier_id=" + supplier_id +
-                ", transaction_id=" + trans_id +
+                ", trans_id=" + trans_id +
                 ", order_status='" + order_status + '\'' +
                 '}';
     }

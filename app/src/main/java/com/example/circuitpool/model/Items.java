@@ -1,16 +1,16 @@
 package com.example.circuitpool.model;
 
-public class Order_Items {
+public class Items {
 
     long item_id;
     long order_id;
     long item_qty;
     long item_rate;
 
-    public Order_Items() {
+    public Items() {
     }
 
-    public Order_Items(long item_id, long order_id, long item_qty, long item_rate) {
+    public Items(long item_id, long order_id, long item_qty, long item_rate) {
         this.item_id = item_id;
         this.order_id = order_id;
         this.item_qty = item_qty;
@@ -51,7 +51,7 @@ public class Order_Items {
 
     @Override
     public String toString() {
-        return "Order_Items{" +
+        return "Items{" +
                 "item_id=" + item_id +
                 ", order_id=" + order_id +
                 ", item_qty=" + item_qty +
