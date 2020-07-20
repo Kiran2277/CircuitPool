@@ -10,8 +10,6 @@ public class Admin {
         this.password = password;
     }
 
-    public Admin(String admin1) {
-    }
 
     @Override
     public String toString() {
